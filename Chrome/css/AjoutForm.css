@@ -1,0 +1,137 @@
+/* --- Importation de la police d'écriture --- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Roboto&display=swap');
+
+
+/* --- Taille de la page --- */
+.layout{
+    width: 310px;
+    height: 466px;
+    padding: 8px, 8px, 24px, 8px;
+    transition: 0.5s;
+}
+
+/* --- Suppression de la décoration du lien --- */
+.lien{
+  text-decoration: none;
+}
+
+.form{
+  margin-left: 7px;
+}
+
+/* --- Texte du haut --- */
+.service{
+  text-align: center;
+  color: #7590A8;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* --- Propriétés du formulaire --- */
+
+.titelInpute{
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7590A8;
+}
+
+.form_input, .select
+{
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: #2A4054;
+
+  background-color: #F6F8F9;
+  width: 296px;
+  height: 40px;
+
+  transition: 0.5s;
+}
+
+.form_input::placeholder {
+  color: #7590A8;
+}
+
+.form_input:hover, .select:hover{
+  border: 1px solid #C8D3DC;
+}
+
+.form_input:focus, .select:focus{
+  border: 1px solid #466A8B;
+}
+
+.textarea {
+  width: 300px;
+  height: 150px;
+  resize: none;
+  border: none;
+  border-radius: 4px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #2A4054;
+  background-color: #F6F8F9;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+
+}
+
+/* --- Style du botton --- */
+.ajouter{
+  height: 40px;
+  width: 103px;
+  outline: none;
+  margin: 8px;
+  border: none;
+  background-color: #2A4054;   
+  border-radius: 4px;
+  float: right;
+
+
+  /* Texte */
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Mulish', sans-serif;
+  color: white;
+  
+  transition: 0.4s;
+}
+
+/* --- Animation du bouton --- */
+.ajouter:hover{
+background-color: #466A8B;
+color: white;
+}
+
+
+/* ---Propriétés de la scrollbar--- */
+/* Largeur de la barre */
+::-webkit-scrollbar {
+  width: 0.5em;
+  margin-right: 4px;
+}
+
+
+/* Barre */
+::-webkit-scrollbar-thumb {
+  background: #C8D3DC; 
+  border-radius: 6px;
+}
+
+/* Survol de la barre */
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9da0; 
+}
+
+/*Trait de séparation*/
+.trait{
+  border-top: 1px solid #cdd1d49a;
+  margin-bottom: 6%;
+}

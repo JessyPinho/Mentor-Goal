@@ -1,0 +1,87 @@
+/* --- Importattion de la police d'écriture et des logos --- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* --- Taille de la page --- */
+
+
+  /* --- Suppression de la décoration du lien --- */
+  .lien{
+    text-decoration: none;
+  }
+
+  /* --- Texte de notification --- */
+  
+.message{
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  color: #A3B5C5;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 16px 0px;
+}
+
+/* --- Texte de la catégorie --- */
+.categorie{
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2A4054;
+}
+
+
+/* --- Espacement --- */
+
+.contenu{
+  margin: 10px 0px;
+}
+
+/* --- Bouton-Lien vers Mentor Goal --- */
+.lien{
+  text-decoration: none;
+  text-align: center;
+  display: grid;  
+  place-items: center;
+}
+
+/* --- Style du bouton --- */
+.ouvrirlien{
+  /* Bouton */
+  height: 40px;
+  width: 221px;
+  outline: none;
+  margin: 8px;
+  border: none;
+  background-color: #2A4054;   
+  border-radius: 4px;
+  margin-left: 60px;
+  
+
+  /* Texte */
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  
+  transition: 0.5s;
+}
+
+/* --- Animation du bouton --- */
+.ouvrirlien:hover{
+background-color: #466A8B;
+color: white;
+}
+
+/* --- Icône de validation --- */
+.valided{
+  margin-left: 160px;
+  height: 36px;
+  width: 36px;
+}

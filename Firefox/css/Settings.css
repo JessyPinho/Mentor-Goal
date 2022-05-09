@@ -1,0 +1,100 @@
+/* Importation de la police d'écriture*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Roboto&display=swap');
+
+/* --- Taille de la page --- */
+.layout{
+  width: 360px;
+  height: 392px;
+  overflow: hidden;
+}
+
+/* --- Suppression de la décoration du lien --- */
+.lien{
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+
+/* --- Texte du haut --- */
+.service{
+  text-align: center;
+  color: #7590A8;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* --- Trait de séparation ---*/
+.trait{
+  border-top: 1px solid #cdd1d49a;
+  margin-bottom: 6%;
+}
+
+/* --- Propriétés du formulaire --- */
+.form{
+margin-left: 30px;
+}
+
+.label{
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7590A8;
+}
+
+.form_input, .select
+{
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px, 16px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: #2A4054;
+
+  background-color: #F6F8F9;
+  width: 296px;
+  height: 40px;
+
+  transition: 0.5s;
+}
+.select::placeholder, .form_input::placeholder {
+  color: #7590A8;
+}
+
+.form_input:hover, .select:hover{
+  border: 1px solid #C8D3DC;
+}
+
+.form_input:focus, .select:focus{
+  border: 1px solid #466A8B;
+}
+
+
+
+/* --- Style du bouton --- */
+.deconnexion{
+  /* Bouton */
+  height: 30px;
+  width: 135px;
+  border: 2px solid #A3B5C5;   
+  border-radius: 4px;
+  background-color: white;
+
+  /* Texte */
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #455869;
+  
+  transition: 0.5s;
+}
+
+.deconnexion:hover{
+  border-color: #7590A8;
+}
+

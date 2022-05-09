@@ -1,0 +1,68 @@
+{
+    "name": "Mentor Goal",
+    "description": "Une extension qui vous simplifie l'envoi de candidatures aux entreprises!",
+    "version": "0.2",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+      {
+        "resources": ["images/MentorGoal48.png"],
+        "matches": ["<all_urls>"]
+      },
+      {
+        "resources": ["images/logoX.png"],
+        "matches": ["<all_urls>"]
+      },
+      {
+        "resources": ["html/Popup.html"],
+        "matches": ["<all_urls>"]
+      },
+      {
+        "resources": ["html/StartPage.html"],
+        "matches": ["<all_urls>"]
+      },
+      {
+        "resources": ["icons/*"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://www.linkedin.com/*"],
+          "css": ["css/displayExtension.css","css/popUp2.css","css/AjoutForm.css","css/Parametres.css","css/SuccessAddForm.css"],
+          "js": ["js/ScrapJobLinkedin.js","js/ScrapJob.js","js/ScrapContact.js","js/successContact.js","js/sucessCandidature.js","js/AjoutCandidature.js","js/AjoutContact.js","js/Parametres.js","js/Popup2.js","js/Popup3.js","js/displayDefault.js", "js/displayLinkdin.js"]
+        },
+        {
+          "matches":["https://mg-student.netlify.app/applications"],
+          "css": ["css/displayCandidature.css", "css/startpage.css"],
+          "js": ["js/displayStartPage.js","js/displayDefault.js", "js/displayCandidature.js"]
+        },
+        {
+          "matches":["https://fr.indeed.com/viewjob?jk=*"],
+          "css": ["css/displayExtension.css","css/popUp2.css","css/AjoutForm.css","css/Parametres.css","css/SuccessAddForm.css"],
+          "js": ["js/ScrapJobIndeed.js","js/ScrapJob.js","js/ScrapContact.js","js/successContact.js","js/sucessCandidature.js","js/AjoutCandidature.js","js/AjoutContact.js","js/Parametres.js","js/Popup2.js","js/Popup3.js","js/displayDefault.js", "js/displayIndeed.js"]
+        },
+        
+        {
+          "matches":["https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/*"],
+          "css": ["css/displayExtension.css","css/popUp2.css","css/AjoutForm.css","css/Parametres.css","css/SuccessAddForm.css"],
+          "js": ["js/ScrapJobApec.js","js/ScrapJob.js","js/ScrapContact.js","js/successContact.js","js/sucessCandidature.js","js/AjoutCandidature.js","js/AjoutContact.js","js/Parametres.js","js/Popup2.js","js/Popup3.js","js/displayDefault.js", "js/displayApec.js"]
+          
+        }
+      ],
+
+    "action": {
+    "default_icon": {
+        "16": "/images/mentorgoal16.png",
+        "32": "/images/mentorgoal32.png",
+        "48": "/images/mentorgoal64.png",
+        "128": "/images/mentorgoal128.png"
+    }
+},
+
+"icons": {
+    "16": "/images/mentorgoal16.png",
+    "32": "/images/mentorgoal32.png",
+    "48": "/images/mentorgoal64.png",
+    "128": "/images/mentorgoal128.png"
+    }
+}

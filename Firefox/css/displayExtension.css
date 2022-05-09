@@ -1,0 +1,72 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* *
+{
+  margin: 0;
+  padding: 0;
+}
+html, body
+{
+  width: 100%;
+  height: 100%;
+} */
+
+.dropbtn {
+  color: white;
+  padding: 25px;
+  font-size: 16px;
+  background-image: url("chrome-extension://okankfflagppplpegecfolfmndeamimh/images/MentorGoal48.png");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+
+.dropup {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.gigadiv {
+  position: fixed;
+  z-index: 1000000;
+  bottom: 6%;
+  right: 0;
+}
+
+
+.dropup-content {
+  position: absolute;
+  background-color: white;
+  width: 256px;
+  height: 164px;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  box-shadow: 1px 1px 3px 1px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+
+.dropup-content a {
+  color: black;
+  padding: 4px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropup:hover .dropup-content {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}

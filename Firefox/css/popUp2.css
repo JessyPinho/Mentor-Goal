@@ -1,0 +1,39 @@
+/* --- Importattion de la police d'écriture et des logos --- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.columnDisplay
+{
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Style du bouton --- */
+.buttonStyling
+{
+  height: 36px;
+    width: 230px;
+    outline: none;
+    margin: 7px;
+    border: none;  
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 4px;
+    cursor : pointer;
+    /*Partie texte*/
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: #2A4054;
+    text-align: left; 
+}
+
+/* --- Animation du bouton --- */
+
+.buttonStyling:hover
+{
+  background-color: #EDF0F3;
+  color: #2A4054;
+  padding: 5px 7px;
+}

@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+
+.form_input
+{
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid ;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+/* Style du boutton*/
+.ougabouga
+{
+  text-transform: uppercase;
+  background-color: #090086;
+  border: solid rgb(255, 255, 255);
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*Survol du boutton*/
+
+.ougabouga:hover
+{
+  background-color: #001bb3;
+  color: black;
+  border: solid rgb(0, 0, 0);
+}
+
+/*Clic sur le boutton*/
+.ougabouga:focus
+{
+  outline: none;
+  border-bottom: 2px solid #ffffff ;
+}

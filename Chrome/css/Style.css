@@ -1,0 +1,45 @@
+/* --- Importattion de la police d'écriture et des logos --- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* --- Taille de la page --- */
+.layout{
+  width: 256px;
+  height: 164px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+/* --- Suppression de la décoration du lien --- */
+.lien{
+  text-decoration: none;
+}
+
+/* --- Style du botton --- */
+.bouton {
+    height: 36px;
+    width: 240px;
+    outline: none;
+    margin: 7px;
+    border: none;  
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 4px;
+    cursor : pointer;
+    
+    /*Partie texte*/
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color: #2A4054;
+    text-align: left;
+}
+
+/* --- Animation du bouton --- */
+.bouton:hover{
+  background-color: #EDF0F3;
+  color: #2A4054;
+  padding: 5px 10px;
+}
+
